@@ -64,16 +64,3 @@ public:
         merge(arr, leftIndex, midIndex, rightIndex); 
     }
 }; 
-
-int main(void) {
-    int arr[8] = {8, 5, 99, 33, 71, 45, 11, 1};
-    int size = sizeof(arr) / sizeof(arr[0]); 
-
-    MergeSort::sort(arr, 0, size-1); 
-
-    for(auto i : arr) {
-        std::cout << i << ' ';
-    }
-
-    std::cin.get();
-}
